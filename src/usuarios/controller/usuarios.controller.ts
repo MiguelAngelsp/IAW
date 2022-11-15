@@ -1,10 +1,11 @@
-import { Body, Controller, Get, Post } from '@nestjs/common';
+import { Body, Controller, Delete, Get, Param, Post, Put } from '@nestjs/common';
 import { UsuariosDto } from '../dto/usuarios.dto';
 import { UsuariosService } from '../service/usuarios.service';
 
 @Controller('usuarios')
 export class UsuariosController {
-    constructor (private UsuariosService: UsuariosService) {}
+    usuarios: any;
+    constructor(private UsuariosService: UsuariosService) { }
 
     @Post('/')
     create(@Body() usuario: UsuariosDto): UsuariosDto {
@@ -15,4 +16,15 @@ export class UsuariosController {
     findAll(): UsuariosDto[] {
         return this.UsuariosService.findAll();
     }
+
+    @Put(':ID')
+    update(@Param('ID') ID: number, @Body() payload: UsuariosDto) {
+        return this.UsuariosService.update(+ID, payload);
+    }
+
+    @Delete(':ID')
+    remove(@Param('ID') ID: number) {
+      return this.UsuariosService.remove(+ID);
+    }
 }
+
