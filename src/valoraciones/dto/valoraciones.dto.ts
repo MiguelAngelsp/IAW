@@ -2,7 +2,7 @@ import { IsNumber, IsString, MaxLength } from "class-validator";
 
 export class ValoracionesDto {
     @IsNumber()
-    ID: number;
+    ValoracionID: number;
     
     @IsString()
     @MaxLength(60)
@@ -10,7 +10,7 @@ export class ValoracionesDto {
 
     @IsNumber()
     @MaxLength(2)
-    Puntuacion: GLfloat;
+    Puntuacion: number;
 
     @IsString()
     @MaxLength(100)
@@ -18,5 +18,5 @@ export class ValoracionesDto {
 
     @IsString()
     @MaxLength(15)
-    Usuario: string;
+    UsuarioID: number;
 }

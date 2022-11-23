@@ -2,11 +2,11 @@ import { IsEmail, IsNumber, IsString, MaxLength } from "class-validator";
 
 export class UsuariosDto {
     @IsNumber()
-    ID: number;
+    UsuarioID: number;
     
     @IsString()
     @MaxLength(9)
-    DNI: number;
+    DNI: string;
 
     @IsString()
     @MaxLength(15)

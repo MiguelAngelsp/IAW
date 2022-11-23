@@ -7,6 +7,7 @@ import { ValoracionesModule } from './valoraciones/valoraciones.module';
 import { GenerosModule } from './generos/generos.module';
 import { TypeOrmModule } from '@nestjs/typeorm';
 import { ConfigModule } from '@nestjs/config';
+import { CestaModule } from './cesta/cesta.module';
 
 @Module({
   imports: [ ConfigModule.forRoot(), TypeOrmModule.forRoot({
@@ -19,7 +20,7 @@ import { ConfigModule } from '@nestjs/config';
       autoLoadEntities: true,
       synchronize: !!process.env.DB_SYNC
     }),
-    UsuariosModule, PeliculasModule, ValoracionesModule, GenerosModule],
+    UsuariosModule, PeliculasModule, ValoracionesModule, GenerosModule, CestaModule],
   controllers: [AppController],
   providers: [AppService],
 })

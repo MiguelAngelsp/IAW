@@ -2,7 +2,7 @@ import { IsEmail, IsNumber, IsString, MaxLength } from "class-validator";
 
 export class PeliculasDto {
     @IsNumber()
-    ID: number;
+    PeliculaID: number;
     
     @IsString()
     @MaxLength(60)

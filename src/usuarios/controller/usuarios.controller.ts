@@ -8,7 +8,7 @@ export class UsuariosController {
     constructor(private UsuariosService: UsuariosService) { }
 
     @Post('/')
-    create(@Body() usuario: UsuariosDto): UsuariosDto {
+    create(@Body() usuario: UsuariosDto): Promise<UsuariosDto>{
         return this.UsuariosService.create(usuario);
     }
 
