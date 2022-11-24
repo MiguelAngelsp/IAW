@@ -1,0 +1,50 @@
+[
+    {
+        "PerfilID": "1000000",
+        "UsuarioID": "",
+        "Correo": "sandra@apicine.com",
+        "Contraseña": "32KRJKsdlakkl1",
+        "Web": "andra-apicine.com/",
+        "GitHub": "sandra-apicine"
+    },
+    {
+        "PerfilID": "1000001",
+        "UsuarioID": "",
+        "Correo": "pepe@apicine.com",
+        "Contraseña": "FDSF3424dfs3",
+        "Web": "pepe-apicine.com/",
+        "GitHub": "pepe-apicine"
+    },
+    {
+        "PerfilID": "1000002",
+        "UsuarioID": "",
+        "Correo": "sofia@apicine.com",
+        "Contraseña": "HRTHDddsf324",
+        "Web": "sofia-apicine.com/",
+        "GitHub": "sofia-apicine"
+    },
+    {
+        "PerfilID": "1000003",
+        "UsuarioID": "",
+        "Correo": "gines@apicine.com",
+        "Contraseña": "213ADqweq",
+        "Web": "gines-apicine.com/",
+        "GitHub": "gines-apicine"
+    },
+    {
+        "PerfilID": "1000004",
+        "UsuarioID": "",
+        "Correo": "luis@apicine.com",
+        "Contraseña": "DAJD12ksada",
+        "Web": "luis-apicine.com/",
+        "GitHub": "luis-apicine"
+    },
+    {
+        "PerfilID": "1000005",
+        "UsuarioID": "",
+        "Correo": "antonio@apicine.com",
+        "Contraseña": "dsadDSAD1223",
+        "Web": "antonio-apicine.com/",
+        "GitHub": "antonio-apicine"
+    }
+]

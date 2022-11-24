@@ -1,4 +1,4 @@
-import {IsNumber} from "class-validator";
+import {IsDate, IsNumber} from "class-validator";
 
 export class cestaDto {
     @IsNumber()
@@ -9,4 +9,7 @@ export class cestaDto {
     
     @IsNumber()
     PeliculaID: number;
+
+    @IsDate()
+    Fecha_compra: Date;
 }

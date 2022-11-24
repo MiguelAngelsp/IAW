@@ -14,24 +14,24 @@ export class peliculasEntity {
     @Column('text',{
         nullable: true
     })
-    Genero: string;
+    GeneroID: string;
 
     @Column('text',{
         nullable: true
     })
     Descripcion: string;
 
-    @Column('text',{
-        nullable: true
+    @Column('numeric',{
+        unique: true
     })
-    Comentario: string;
+    ValoracionID: number;
 
-    constructor(PeliculaID: number, Titulo: string, Genero: string, Descripcion: string, Comentario:string) {
+    constructor(PeliculaID: number, Titulo: string, GeneroID: string, Descripcion: string, ValoracionID: number) {
         this.PeliculaID = PeliculaID;
         this.Titulo = Titulo;
-        this.Genero = Genero;
+        this.GeneroID = GeneroID;
         this.Descripcion = Descripcion;
-        this.Comentario = Comentario;
+        this.ValoracionID= ValoracionID;
         console.log('Creo la entidad pelicula para ' + this.Titulo);
     }
 

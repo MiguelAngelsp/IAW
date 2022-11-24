@@ -1,0 +1,26 @@
+[
+    {
+        "GeneroID": "001",
+        "Genero": "Terror"
+    },
+    {
+        "GeneroID": "002",
+        "Genero": "Ciencia Ficcion"
+    },
+    {
+        "GeneroID": "003",
+        "Genero": "Fantasia"
+    },
+    {
+        "GeneroID": "004",
+        "Genero": "Drama"
+    },
+    {
+        "GeneroID": "005",
+        "Genero": "Comedia"
+    },
+    {
+        "GeneroID": "006",
+        "Genero": "Aventuras"
+    }
+]

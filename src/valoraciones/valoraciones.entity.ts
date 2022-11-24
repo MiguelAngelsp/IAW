@@ -6,10 +6,10 @@ export class valoracionesEntity {
     @PrimaryGeneratedColumn("uuid")
     ValoracionID: number;
 
-    @Column('text',{
+    @Column('numeric',{
         unique: true
     })
-    Titulo_pelicula: string;
+    PeliculaID: number;
 
     @Column('text',{
         nullable: true
@@ -26,13 +26,13 @@ export class valoracionesEntity {
     })
     UsuarioID: number;
 
-    constructor(ValoracionID: number, Titulo_pelicula: string, Puntuacion: number, Comentario: string, UsuarioID:number) {
+    constructor(ValoracionID: number, PeliculaID: number, Puntuacion: number, Comentario: string, UsuarioID:number) {
         this.ValoracionID = ValoracionID;
-        this.Titulo_pelicula = Titulo_pelicula;
+        this.PeliculaID = PeliculaID;
         this.Puntuacion = Puntuacion;
         this.Comentario = Comentario;
         this.UsuarioID = UsuarioID;
-        console.log('Creo la entidad valoracion para ' + this.Titulo_pelicula);
+        console.log('Creo la entidad valoracion para ' + this.ValoracionID);
     }
 
 }

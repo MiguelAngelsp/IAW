@@ -4,9 +4,8 @@ export class ValoracionesDto {
     @IsNumber()
     ValoracionID: number;
     
-    @IsString()
-    @MaxLength(60)
-    Titulo_pelicula: string;
+    @IsNumber()
+    PeliculaID: number;
 
     @IsNumber()
     @MaxLength(2)

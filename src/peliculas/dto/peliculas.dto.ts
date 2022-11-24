@@ -8,15 +8,13 @@ export class PeliculasDto {
     @MaxLength(60)
     Titulo: string;
 
-    @IsString()
-    @MaxLength(15)
-    Genero: string;
+    @IsNumber()
+    GeneroID: number;
 
     @IsString()
     @MaxLength(80)
     Descripcion: string;
 
-    @IsString()
-    @MaxLength(100)
-    Comentario: string;
+    @IsNumber()
+    ValoracionID: number;
 }
